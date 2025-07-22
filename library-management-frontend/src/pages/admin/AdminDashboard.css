@@ -1,0 +1,95 @@
+.admin-sidebar {
+  background: linear-gradient(to right, #1b1440, #29215a);
+  color: #fff;
+  min-height: 100vh;
+  width: 250px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+}
+
+.admin-sidebar h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.admin-sidebar .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.admin-sidebar .nav-link.active,
+.admin-sidebar .nav-link:hover {
+  background: #ffc107;
+  color: #232526 !important;
+  font-weight: 500;
+}
+
+.admin-sidebar .btn-outline-light {
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.admin-sidebar .btn-outline-light:hover {
+  background: #fff;
+  color: #232526;
+}
+
+.admin-content {
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.welcome-animated {
+  text-align: center;
+  animation: fadeInScale 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffb347, #ffcc33, #6dd5ed, #2193b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorPulse 2.5s infinite alternate;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  opacity: 0.85;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes colorPulse {
+  0% {
+    filter: brightness(1);
+  }
+
+  100% {
+    filter: brightness(1.2);
+  }
+}

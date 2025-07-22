@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+  background: linear-gradient(to right, #1b1440, #29215a);
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: #00ffc3;
+  margin-left: 8px;
+}
+
+/* Nav Items */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: #00ffc3;
+}
+
+
+.category-dropdown:focus {
+  outline: none;
+}
+
+/* Search Bar */
+.search-bar {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 16px;
+  color: #ffffff;
+  width: 180px;
+  font-size: 14px;
+}
+
+.search-bar::placeholder {
+  color: #888;
+}
+
+/* Register Link */
+.register-link {
+  color: white;
+  font-weight: 600;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #00ffc3;
+}
+
+.profile-btn:hover {
+  background: #888;
+  color: #0b5383;
+  border: none;
+  color: #b5eee0;
+  cursor: pointer;
+}
+

@@ -1,0 +1,194 @@
+.librarian-sidebar {
+  background: linear-gradient(to right, #1b1440, #29215a);
+  color: #fff;
+  min-height: 100vh;
+  width: 250px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  border-radius: 0 18px 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.librarian-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .librarian-layout {
+    flex-direction: column;
+  }
+
+  .librarian-sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+
+  .librarian-content {
+    padding: 1rem;
+    
+  }
+}
+
+
+.librarian-sidebar h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.librarian-sidebar .nav {
+  width: 100%;
+}
+
+.librarian-sidebar .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s, color 0.2s;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.librarian-sidebar .nav-link.active,
+.librarian-sidebar .nav-link:hover {
+  background: #ffc107;
+  color: #232526 !important;
+  font-weight: 500;
+}
+
+.librarian-sidebar .btn-outline-light {
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: background 0.2s, color 0.2s;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.librarian-sidebar .btn-outline-light:hover {
+  background: #fff;
+  color: #232526;
+}
+
+.librarian-content {
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  flex-grow: 1;
+}
+
+
+.librarian-profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.2s;
+}
+
+.librarian-profile-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+
+.librarian-profile-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.librarian-profile-card h4 {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #232526;
+}
+
+.librarian-profile-card p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+@media (max-width: 991px) {
+  .librarian-sidebar {
+    min-height: auto;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+  }
+  .librarian-content {
+    border-radius: 0;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+.animated-welcome {
+  animation: fadeInDown 1s ease;
+  margin-bottom: 2rem;
+}
+
+.animated-welcome h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #232526;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.wave {
+  display: inline-block;
+  animation: waveHand 1.6s infinite;
+  font-size: 2.2rem;
+  transform-origin: 70% 70%;
+}
+
+@keyframes waveHand {
+  0% { transform: rotate(0deg);}
+  10% { transform: rotate(14deg);}
+  20% { transform: rotate(-8deg);}
+  30% { transform: rotate(14deg);}
+  40% { transform: rotate(-4deg);}
+  50% { transform: rotate(10deg);}
+  60% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-text {
+  color: #1b1440;
+  letter-spacing: 1px;
+}

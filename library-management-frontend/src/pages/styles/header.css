@@ -1,0 +1,77 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+  background: linear-gradient(to right, #1b1440, #29215a);
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: #00ffc3;
+  margin-left: 8px;
+}
+
+/* Nav Items */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  color: #00ffc3;
+}
+
+/* Category Dropdown */
+.category-dropdown {
+  background-color: #1e1e1e;
+  color: #00ffc3;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.category-dropdown:focus {
+  outline: none;
+}
+
+
+
+
+/* Register Link */
+.register-link {
+  color: white;
+  font-weight: 600;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #00ffc3;
+}

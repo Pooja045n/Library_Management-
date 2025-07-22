@@ -1,0 +1,10 @@
+.auth-bg {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  background: white;
+}
